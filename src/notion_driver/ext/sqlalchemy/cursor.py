@@ -1,4 +1,3 @@
-from uuid import UUID
 from sqlalchemy import exc
 
 from notion_driver.driver import NotionDriver
