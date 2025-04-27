@@ -1,0 +1,13 @@
+[project]
+name = "notion-driver"
+authors = [{name = "txello", email = "txello@inbox.ru"}]
+version = "1.0.0"
+requires-python = ">=3.11"
+
+dependencies = [
+    "notion_client>=2.3.0",
+    "sqlalchemy>=2.0.0"
+]
+
+[project.entry-points."sqlalchemy.dialects"]
+notion = "notion_driver.ext.sqlalchemy.dialect:NotionDialect"
